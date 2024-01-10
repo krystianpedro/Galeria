@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świąteczna Galeria</title>
+    <style>
+        body {
+            background-image: url('tło.jpg'); /* Zdjęcie jako tło strony */
+            background-size: cover; /* Dopasuj zdjęcie do rozmiaru okna przeglądarki */
+            background-repeat: no-repeat; /* Nie powtarzaj tła */
+            color: #000000; /* czarny tekst */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header {
+            background-color: #ff0000; /* czerwone tło */
+            color: #00ff00; /* zielony tekst */
+            padding: 10px;
+            width: 25%; /* Szerokość menu boczne */
+            box-sizing: border-box;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        nav {
+            background-color: #cccccc; /* szare tło menu */
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000000; /* czarny tekst w menu */
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #eeeeee; /* jasnoszare tło po najechaniu myszką */
+        }
+
+        section {
+            margin: 20px;
+            margin-left: 25%; /* Dodałem margines z lewej strony, aby zawartość nie kolidowała z menu */
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #ff0000; /* czerwony tekst dla sekcji */
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px; /* Maksymalna szerokość obrazka */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Wycentrowanie obrazka */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Świąteczna Galeria</h1>
+        <nav>
+            <a href="#zimno">
+                <img src="zimno.jpg" alt="Zimno Icon">
+                Zimno
+            </a>
+            <a href="#cieplo">
+                <img src="ciepło.jpg" alt="Ciepło Icon">
+                Ciepło
+            </a>
+            <a href="#goraco">
+                <img src="gorąco.jpg" alt="Gorąco Icon">
+                Gorąco
+            </a>
+        </nav>
+    </header>
+</body>
+</html>
